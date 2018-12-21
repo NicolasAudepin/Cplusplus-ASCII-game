@@ -10,9 +10,12 @@ class Weapon{
     std::string name;
     int damage;
     bool equipped;
-    CrewMember owner;
+    
 
     public:
+
+    Weapon(std::string _name, int _damage);
+    ~Weapon();
 
     CrewMember getOwner();
     bool getEquipped();

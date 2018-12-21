@@ -1,10 +1,10 @@
 
 #include <string>
+#include <iostream>
 #include "Weapon.h"
 
-    CrewMember Weapon::getOwner(){
-        return owner;
-    };
+using namespace std;
+
     bool Weapon::getEquipped(){
         return equipped;
     };
@@ -13,4 +13,19 @@
     };
     std::string Weapon::getName(){
         return name;
+    };
+
+    
+    Weapon::Weapon(std::string _name, int _damage){
+        name=_name;
+        damage=_damage;
+        equipped = false;
+        cout<<"\n"<<name <<" created";
+
+
+    };
+
+
+    Weapon::~Weapon(){
+        cout<<"\n the "<<name<<" has broken";
     };

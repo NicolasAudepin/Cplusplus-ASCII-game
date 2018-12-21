@@ -1,18 +1,17 @@
 #ifndef GUI_H
 #define GUI_H
 
-#include <string>
-#include <vector>
-
-
+#include "Weapon.h"
 #include "CrewMember.h"
+#include <string>
 
 class GUI{
     public:
     GUI();
-    void showCrewMember(CrewMember & cm);
+    void showWeapon(Weapon & w);
+    void showCrewMember(CrewMember cm);
 
-    void GUI::showList(vector<string> names, vector<int> values);
+    std::string setlength(std::string txt, int len);
 };
 
 #endif
