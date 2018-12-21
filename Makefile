@@ -9,3 +9,4 @@ GUI.o: GUI.h GUI.cpp CrewMember.o
 
 CrewMember.o: CrewMember.h CrewMember.cpp
 	g++ -Wall -std=c++11 -DEBUG -c CrewMember.cpp
+

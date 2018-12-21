@@ -1,5 +1,7 @@
 #include "GUI.h"
 #include <iostream>
+#include <vector>
+#include <string>
 #include "CrewMember.h"
 using namespace std;
 
@@ -21,3 +23,7 @@ void GUI::showCrewMember(CrewMember & cm){
     cout<<output;
 }
 
+
+void GUI::showList(vector<string> names, vector<int> values){
+
+}
