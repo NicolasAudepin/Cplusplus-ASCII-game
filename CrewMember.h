@@ -12,6 +12,8 @@ class CrewMember{
     int hunger;
     int weight;
 
+    //Weapon* equippedWeapon;
+
     public:
 
     CrewMember(std::string _name);
