@@ -10,8 +10,10 @@ GUI::GUI(){
 
 };
 
-void GUI::showCrewMember(CrewMember cm){
+void GUI::showCrewMember( CrewMember & cm){
     string output("\n");
+
+    
 
     output+="\n _________________________ ";
     output+="\n|  " + setlength(cm.getName(),23) +"|";
@@ -38,10 +40,8 @@ void GUI::showWeapon(Weapon & w){
 
 
 
-
-
 //cut the text if longer than len and pan it with space bar to fill the space if shorter
- std::string GUI::setlength(std::string txt, int len){
+ std::string GUI::setlength( std::string txt, int len){
 
     int txtlen =  txt.length();
 

@@ -33,5 +33,4 @@ int CrewMember::getWeight(){
 
 string CrewMember::getName(){
     return name;
-
 }

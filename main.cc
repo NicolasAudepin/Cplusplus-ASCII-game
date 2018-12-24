@@ -10,24 +10,26 @@ int main(){
     GUI gui = GUI();
 
    
+    CrewMember *pjohn(0);
 
+    pjohn =new  CrewMember("CyberJohnatan");
+    
+    gui.showCrewMember(*pjohn);
 
-    CrewMember cm =  CrewMember("CyberJohnatan");
-    CrewMember *c = &cm;
-    gui.showCrewMember( *c);
-
-    cm.~CrewMember();
+    delete pjohn;
 
     Weapon cb = Weapon("CyberGun300", 10);
 
-    Weapon bw = Weapon("GoodOldEfficientGun",50);
+    Weapon bw = Weapon("U.L.T.R.A_Laser",50);
 
     gui.showWeapon(cb);
     gui.showWeapon(bw);
     
     
-    cb.~Weapon();
+    //cb.~Weapon();
 
-    bw.~Weapon();
+    //bw.~Weapon();
+
+    cout <<"\n\nGAME OVER \n";
     return 0;
 }
