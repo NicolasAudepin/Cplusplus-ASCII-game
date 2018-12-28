@@ -1,4 +1,5 @@
 #include "CrewMember.h"
+#include "Weapon.h"
 #include <string>
 #include <iostream>
 
@@ -9,6 +10,7 @@ CrewMember::CrewMember(string _name){
     health=10;
     hunger=10;
     weight=70;
+    
 };
 
 CrewMember::~CrewMember(){
@@ -33,4 +35,8 @@ int CrewMember::getWeight(){
 
 string CrewMember::getName(){
     return name;
+}
+
+Weapon CrewMember::getWeapon() {
+    return weapon;
 }

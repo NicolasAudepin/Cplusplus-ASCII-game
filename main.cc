@@ -8,11 +8,12 @@
 using namespace std;
 
 int main(){
+    GUI gui = GUI();
+    CrewMember joe = CrewMember("Galilee");
 
-    Dice d = Dice();
+    gui.showCrewMember(joe);
 
-    d.playWithDice();
-    
+
 
     cout <<"\n\nGAME OVER \n";
     return 0;

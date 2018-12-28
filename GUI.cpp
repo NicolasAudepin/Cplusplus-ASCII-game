@@ -20,7 +20,8 @@ void GUI::showCrewMember( CrewMember & cm){
     output+="\n|_________________________|";
     output+="\n|  Health: "+setlength(std::to_string(cm.getHealth()),15)+"|"; 
     output+="\n|  Hunger: "+setlength(std::to_string(cm.getHunger()),15)+"|"; 
-    output+="\n|  Weight: "+setlength(std::to_string(cm.getWeight()),15)+"|"; 
+    output+="\n|  Weight: "+setlength(std::to_string(cm.getWeight()),15)+"|";
+    output+="\n|  Weapon: "+setlength(std::to_string(cm.getWeapon().getName()),15)+"|"; 
     output+="\n|_________________________|";
 
     cout<<output;
