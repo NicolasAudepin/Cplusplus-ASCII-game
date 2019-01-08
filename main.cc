@@ -12,10 +12,10 @@ int main(){
    
 
 
-    CrewMember cm =  CrewMember("CyberJohnatan");
-    gui.showCrewMember( cm);
+    CrewMember *cm = new CrewMember("CyberJohnatan");
+    gui.showCrewMember( *cm);
 
-    cm.~CrewMember();
+    delete cm;
 
     Weapon cb = Weapon("CyberGun300", 10);
 
@@ -27,6 +27,12 @@ int main(){
     
     cb.~Weapon();
 
+    
+
     bw.~Weapon();
+
+    gui.~GUI();
+
+    cout<<"\nend main";
     return 0;
 }

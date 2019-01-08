@@ -8,6 +8,7 @@
 class GUI{
     public:
     GUI();
+    ~GUI();
     void showWeapon(Weapon & w);
     void showCrewMember(CrewMember & cm);
 

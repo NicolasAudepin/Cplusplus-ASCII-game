@@ -8,6 +8,10 @@ GUI::GUI(){
 
 };
 
+GUI::~GUI(){
+    cout<<"\n end GUI";
+}
+
 void GUI::showCrewMember(CrewMember & cm){
     string output("\n");
 

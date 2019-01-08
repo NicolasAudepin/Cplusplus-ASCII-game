@@ -12,7 +12,7 @@ CrewMember::CrewMember(string _name){
 };
 
 CrewMember::~CrewMember(){
-    cout <<"\n"<< name <<" has died";
+    cout <<"\n "<< name <<" has died";
 }
 
 
