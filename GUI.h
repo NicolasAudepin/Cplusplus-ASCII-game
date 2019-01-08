@@ -10,9 +10,9 @@ class GUI{
     GUI();
     ~GUI();
     void showWeapon(Weapon & w);
-    void showCrewMember(CrewMember & cm);
+    void showCrewMember(CrewMember  & cm);
 
-    std::string setlength(std::string txt, int len);
+    std::string setlength( std::string txt, int len);
 };
 
 #endif

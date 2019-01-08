@@ -1,6 +1,7 @@
 #ifndef CREWMEMBER_H
 #define CREWMEMBER_H
 
+#include "Weapon.h"
 #include <string>
 
 class CrewMember{
@@ -11,6 +12,10 @@ class CrewMember{
     int health;
     int hunger;
     int weight;
+    Weapon weapon;
+
+    //Weapon* equippedWeapon;
+    static Weapon fist= Weapon("Fist", 1);
 
     public:
 
@@ -21,6 +26,7 @@ class CrewMember{
     int getHealth();
     int getHunger();
     int getWeight();
+    Weapon getWeapon(); 
 
 
 };

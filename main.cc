@@ -3,13 +3,15 @@
 #include "GUI.h"
 #include "CrewMember.h"
 #include "Weapon.h"
+#include "Dice.h"
 
 using namespace std;
 
 int main(){
     GUI gui = GUI();
+    CrewMember joe = CrewMember("Galilee");
 
-   
+    gui.showCrewMember(joe);
 
 
     CrewMember *cm = new CrewMember("CyberJohnatan");
@@ -34,5 +36,7 @@ int main(){
     gui.~GUI();
 
     cout<<"\nend main";
+
+    cout <<"\n\nGAME OVER \n";
     return 0;
 }
